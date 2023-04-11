@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class BasicExercises {
     public static void main(String[] args) {
-        //1 exercise of even and odd
+        //1 exercise of even and odd 1push
        int number;
        System.out.println("please enter a number : ");
        Scanner scan = new Scanner(System.in);
