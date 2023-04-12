@@ -35,7 +35,7 @@ public class BasicExercises {
         System.out.printf("the swaped numbers are \n number1 = %d \n number2 = %d \n", numberA, numberB);
         
         
-        //largest number among 3 numbers
+        //largest number among 3 numbers by using if else
         int number_a, number_b, number_c, largest = 0;
         System.out.println("please enter 1st number ");
         number_a = scan.nextInt();
@@ -49,9 +49,20 @@ public class BasicExercises {
             largest = number_a;
         } else if (number_b >= number_a && number_b >= number_c) {
             largest = number_b;
-        } else if (number_c >= number_a && number_c >= number_b) {
-            largest = number_c;
-        }
+        } else largest = number_c;
         System.out.printf("the largest number among %d , %d and %d is %d", number_a, number_b, number_c, largest);
+
+        //largest number among 3 numbers by using ternary operator
+        int n1, n2, n3, largestNumber = 0;
+        System.out.println("please enter 1st number ");
+        n1 = scan.nextInt();
+        System.out.println("please enter 2nd number ");
+        n2 = scan.nextInt();
+        System.out.println("please enter 3rd number ");
+        n3 = scan.nextInt();
+        if (n1 == n3 && n2 == n1 && n1 == n2) {
+            System.out.println("the three numbers are equal");
+        } else largestNumber = (n1>=n2 && n1>=n3 ? n1 : (n2>=n1 && n2>=n3 ? n2 : n3));
+        System.out.printf("the largest number among %d , %d and %d is %d", n1, n2, n3, largestNumber);
     }
 }
