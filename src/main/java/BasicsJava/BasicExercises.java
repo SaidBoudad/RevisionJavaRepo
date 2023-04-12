@@ -122,7 +122,7 @@ public class BasicExercises {
     }
     public static int factorialone ( int n){
         if (n <= 1) {
-            return 1;
+            return 1; //the base case = when to stop
         } else return n * factorialone(n - 1);
     }
 }
