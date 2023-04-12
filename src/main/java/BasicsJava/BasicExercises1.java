@@ -3,7 +3,7 @@ package BasicsJava;
 import java.math.BigInteger;
 import java.util.Scanner;
 
-public class BasicExercises {
+public class BasicExercises1 {
     public static void main(String[] args) {
         //1 exercise of even and odd
         int number;
