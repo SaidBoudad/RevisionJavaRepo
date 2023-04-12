@@ -76,7 +76,7 @@ public class BasicExercises {
         //7 find all divisors of a number
         int numToDivison=0;
         System.out.println("enter a number please");
-                numToDivison = scan.nextInt();
+        numToDivison = scan.nextInt();
         System.out.printf("the divisors of %d are : ",numToDivison);
         for (int i=1;i<=numToDivison/2;i++){
             if (numToDivison%i==0){
@@ -84,6 +84,20 @@ public class BasicExercises {
             }
         }
         System.out.printf(numToDivison +" .");
+
+        //8 factorial of number
+        int Number;
+        long factorial = 1;
+        System.out.println("enter a number please");
+        Number = scan.nextInt();
+        if (Number < 0) {
+            System.out.println("Sorry there is no factorial for negative numbers");
+        } else if (Number >= 0) {
+            for (int i = Number; i >= 1; i--) {
+                factorial = factorial * i;
+            }
+            System.out.printf("the factorial of %d! is %d", Number, factorial);
+        }
     
 
     }
