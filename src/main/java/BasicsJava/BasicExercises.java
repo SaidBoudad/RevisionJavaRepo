@@ -64,5 +64,14 @@ public class BasicExercises {
             System.out.println("the three numbers are equal");
         } else largestNumber = (n1>=n2 && n1>=n3 ? n1 : (n2>=n1 && n2>=n3 ? n2 : n3));
         System.out.printf("the largest number among %d , %d and %d is %d", n1, n2, n3, largestNumber);
+
+        //program multiplalier from 1 to 10 any number given by user
+        int num,multiplication;
+        System.out.println("enter a number");
+        num = scan.nextInt();
+        for (int i=1;i<=10;i++){
+            multiplication=num*i;
+            System.out.printf("%d * %d = %d \n",num,i,multiplication);
+        }
     }
 }
