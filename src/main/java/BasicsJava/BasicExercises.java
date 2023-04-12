@@ -66,12 +66,11 @@ public class BasicExercises {
         System.out.printf("the largest number among %d , %d and %d is %d", n1, n2, n3, largestNumber);
 
         //program multiplalier from 1 to 10 any number given by user
-        int num,multiplication;
+        int num;
         System.out.println("enter a number");
         num = scan.nextInt();
         for (int i=1;i<=10;i++){
-            multiplication=num*i;
-            System.out.printf("%d * %d = %d \n",num,i,multiplication);
+            System.out.printf("%d * %d = %d \n",num,i,(num*i);
         }
     }
 }
