@@ -1,5 +1,6 @@
 package BasicsJava;
 
+import java.math.BigInteger;
 import java.util.Scanner;
 
 public class BasicExercises {
@@ -97,6 +98,20 @@ public class BasicExercises {
                 factorial = factorial * i;
             }
             System.out.printf("the factorial of %d! is %d", Number, factorial);
+        }
+
+        //9 fectorial of large number using BigInteger
+        int Number1;
+        BigInteger Factorial = BigInteger.ONE;
+        System.out.println("enter a number please");
+        Number1 = scan.nextInt();
+        if (Number1 < 0) {
+            System.out.println("Sorry there is no factorial for negative numbers");
+        } else if (Number1 >= 0) {
+            for (int i = Number1; i >= 1; i--) {
+                Factorial = Factorial.multiply(BigInteger.valueOf(i));
+            }
+            System.out.printf("the factorial of %d! is %d", Number1, Factorial);
         }
     
 
