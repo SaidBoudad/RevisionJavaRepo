@@ -18,5 +18,21 @@ public class BasicExercises {
         number2 = scan.nextInt();
         result = number1 + number2;
         System.out.println("the addition of the two numbers is " + result);
+        //swap two numbers
+        int numberA,numberB,temp;
+        System.out.println("please enter 1st number");
+        numberA = scan.nextInt();
+        System.out.println("please enter 2nd number");
+        numberB = scan.nextInt();
+        System.out.println("the numbers that you have choice are :\n" +
+                "number1 = "+numberA+"\n" +
+                "number2 = "+numberB);
+        temp = numberB;
+        numberB = numberA;
+        numberA = temp;
+        System.out.println("the swaped numbers are \n" +
+                "number1 = "+numberA+"\n" +
+                "number2 = "+numberB);
+
     }
 }
