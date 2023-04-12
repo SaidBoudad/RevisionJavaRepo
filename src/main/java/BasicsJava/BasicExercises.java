@@ -10,6 +10,8 @@ public class BasicExercises {
         Scanner scan = new Scanner(System.in);
         number = scan.nextInt();
         System.out.println("number " + number + " is an " + (((number % 2) == 0) ? " even " : " odd ") + " number");
+        
+        
         //2 add two numbers
         int number1, number2, result;
         System.out.println("please enter 1st number");
@@ -18,6 +20,8 @@ public class BasicExercises {
         number2 = scan.nextInt();
         result = number1 + number2;
         System.out.println("the addition of the two numbers is " + result);
+        
+        
         //swap two numbers
         int numberA, numberB, temp;
         System.out.println("please enter 1st number");
@@ -29,6 +33,8 @@ public class BasicExercises {
         numberB = numberA;
         numberA = temp;
         System.out.printf("the swaped numbers are \n number1 = %d \n number2 = %d \n", numberA, numberB);
+        
+        
         //largest number among 3 numbers
         int number_a, number_b, number_c, largest = 0;
         System.out.println("please enter 1st number ");
