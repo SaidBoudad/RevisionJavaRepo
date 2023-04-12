@@ -22,7 +22,7 @@ public class BasicExercises {
         System.out.println("the addition of the two numbers is " + result);
         
         
-        //swap two numbers
+        //3 swap two numbers
         int numberA, numberB, temp;
         System.out.println("please enter 1st number");
         numberA = scan.nextInt();
@@ -35,7 +35,7 @@ public class BasicExercises {
         System.out.printf("the swaped numbers are \n number1 = %d \n number2 = %d \n", numberA, numberB);
         
         
-        //largest number among 3 numbers by using if else
+        //4 largest number among 3 numbers by using if else
         int number_a, number_b, number_c, largest = 0;
         System.out.println("please enter 1st number ");
         number_a = scan.nextInt();
@@ -52,7 +52,7 @@ public class BasicExercises {
         } else largest = number_c;
         System.out.printf("the largest number among %d , %d and %d is %d", number_a, number_b, number_c, largest);
 
-        //largest number among 3 numbers by using ternary operator
+        //5 largest number among 3 numbers by using ternary operator
         int n1, n2, n3, largestNumber = 0;
         System.out.println("please enter 1st number ");
         n1 = scan.nextInt();
@@ -65,7 +65,7 @@ public class BasicExercises {
         } else largestNumber = (n1>=n2 && n1>=n3 ? n1 : (n2>=n1 && n2>=n3 ? n2 : n3));
         System.out.printf("the largest number among %d , %d and %d is %d", n1, n2, n3, largestNumber);
 
-        //program multiplalier from 1 to 10 any number given by user
+        //6 program multiplalier from 1 to 10 any number given by user
         int num;
         System.out.println("enter a number");
         num = scan.nextInt();
@@ -73,7 +73,7 @@ public class BasicExercises {
             System.out.printf("%d * %d = %d \n",num,i,(num*i));
         }
 
-        //find all divisors of a number
+        //7 find all divisors of a number
         int numToDivison=0;
         System.out.println("enter a number please");
                 numToDivison = scan.nextInt();
