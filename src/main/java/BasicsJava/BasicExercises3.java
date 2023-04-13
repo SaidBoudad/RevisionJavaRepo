@@ -56,6 +56,20 @@ public class BasicExercises3 {
             System.out.println();
         }
 
+        //5 duplicate character in a String
+        System.out.println("enter the phrase to give you duplicates characters in it");
+        String phrase = scan.nextLine();
+        String characters = "";
+        String duplicates = "";
+        for (int i = 0; i < phrase.length(); i++) {
+            String character = Character.toString(phrase.charAt(i));
+            if (characters.contains(character) && !duplicates.contains(character)) {
+                duplicates += character + " ' ";
+            }
+            characters += character;
+        }
+        System.out.println(duplicates);
+
 
     }
 }
