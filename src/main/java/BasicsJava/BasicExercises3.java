@@ -19,5 +19,17 @@ public class BasicExercises3 {
         }
         System.out.printf(": %d",reverseNum);
 
+        //2 sum of all digits of a number
+        int number,remainder1,sum=0;
+        System.out.println("enter a number to inverse");
+        number = scan.nextInt();
+        while (number>0) {
+            remainder1 = number%10;
+            number = number/10;
+            sum = sum+remainder1;
+        }
+        System.out.printf("the reverse of the number %d is ",sum);
+
+
     }
 }
