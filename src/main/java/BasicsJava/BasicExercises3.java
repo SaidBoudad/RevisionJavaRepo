@@ -24,14 +24,14 @@ public class BasicExercises3 {
         System.out.println("enter a number to inverse");
         number = scan.nextInt();
         while (number>0) {
-            remainder1 = number%10;
+            sum += number%10;
             number /= 10;
-            sum += remainder1;
         }
         System.out.printf("the reverse of the number %d is ",sum);
 
         //3
-        
+        int Number;
+
 
     }
 }
