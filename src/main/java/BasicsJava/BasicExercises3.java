@@ -14,7 +14,7 @@ public class BasicExercises3 {
         System.out.printf("the reverse of the number %d is ",num);
         while (num>0) {
             remainder = num%10;
-            num = num/10;
+            num /=10;
             reverseNum = (reverseNum*10)+remainder;
         }
         System.out.printf(": %d",reverseNum);
@@ -25,8 +25,8 @@ public class BasicExercises3 {
         number = scan.nextInt();
         while (number>0) {
             remainder1 = number%10;
-            number = number/10;
-            sum = sum+remainder1;
+            number /= 10;
+            sum += remainder1;
         }
         System.out.printf("the reverse of the number %d is ",sum);
 
