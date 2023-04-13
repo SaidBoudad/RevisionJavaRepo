@@ -30,7 +30,15 @@ public class BasicExercises3 {
         System.out.printf("the reverse of the number %d is ",sum);
 
         //3
-        int Number;
+        int Number, t1 = 0, t2 = 1, next;
+        System.out.println("enter the number of terms in the Fibonacci Sequence do you want");
+        Number = scan.nextInt();
+        for (int i = 1; i <= Number; i++) {
+            System.out.printf("Fibonacci %d is %d \n", i , t1);
+            next = t1 + t2;
+            t1 = t2;
+            t2 = next;
+        }
 
 
     }
