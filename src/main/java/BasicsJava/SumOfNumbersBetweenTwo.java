@@ -1,6 +1,6 @@
 package BasicsJava;
 
-public class BasicExercises2 {
+public class SumOfNumbersBetweenTwo {
     public static void main(String[] args) {
         //1 sum of all numbers b/n two numbers
         int result = sum(10, 20);
