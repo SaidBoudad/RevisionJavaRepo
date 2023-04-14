@@ -1,0 +1,32 @@
+package BasicsJava;
+
+import java.util.ArrayList;
+
+public class FindPrimeNumbers {
+    //find prime numbers from a list of numbers
+    public static void main(String[] args) {
+        int start = 10;
+        int end = 17;
+        System.out.printf("the prime numbers from the list : %d to %d are :", start, end);
+        System.out.println(primeNumbers(start, end));
+    }
+    public static ArrayList<Integer> primeNumbers(int start, int end) {
+        ArrayList<Integer> primes = new ArrayList<>();
+        for (int n = start; n <= end; n++) {
+            boolean prime = true;
+            int i = 2;
+            while (i <= n / 2) {
+                if (n % i == 0) {
+                    prime = false;
+                    break;
+                }
+                i++;
+            }
+            if (prime) {
+                primes.add(n);
+            }
+        }
+        return primes;
+    }
+}
+
