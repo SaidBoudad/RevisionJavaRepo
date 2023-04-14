@@ -4,7 +4,7 @@ import java.time.LocalDateTime;
 import java.time.temporal.ChronoUnit;
 import java.util.Scanner;
 
-public class BasicExercises3 {
+public class BasicExercises2 {
 
     public static void main(String[] args) {
         //1 reverse a number
