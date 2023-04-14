@@ -4,10 +4,17 @@ import java.util.Scanner;
 
 public class ReverseString {
     public static void main(String[] args) {
-        //1 reversing a String using Array to hold the list of char and inverse it.
+         //1 reversing a String directly
         Scanner scan = new Scanner(System.in);
         System.out.println("enter a list of character to reverse");
         String s = scan.nextLine();
+        String reverse = "";
+        for (int i = s.length() - 1; i >= 0; i--) {
+            reverse += s.charAt(i);
+        }
+        System.out.println("the reverse fo the given characters is " + reverse);
+
+        //2 reversing a String using Array to hold the list of char and inverse it.
         System.out.println(reverse(s));
     }
     public static String reverse(String s){
