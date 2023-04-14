@@ -98,8 +98,28 @@ public class BasicExercises3 {
         System.out.println("you have been in earth : " + days + "days");
         System.out.println("you have been in earth : " + hours + "hours");
         System.out.println("you have been in earth : " + minutes + "minutes");
+
+
+        //7 check if the given String is a palindrome.
+        String original = "ra mar";
+        original = original.replace(" ", "");//String are imutable so we need to reassigning the changes to the original variable
+        String reverse = "";
+        for (int i = original.length() - 1; i >= 0; i--) {
+            reverse += original.charAt(i);
+        }
+        System.out.println(reverse);
+        boolean palindrome = true;
+        for (int i = 0; i < original.length() - 1; i++) {
+            if (original.charAt(i) != reverse.charAt(i)) {
+                palindrome = false;
+                break;
+            }
+        }
+        if (palindrome) {
+            System.out.println("yes it is a palindrome");
+        } else System.out.println("Not a palindrome");
+
+
     }
-
-
 }
 
