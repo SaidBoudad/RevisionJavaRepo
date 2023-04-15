@@ -4,6 +4,7 @@ import java.text.NumberFormat;
 import java.time.LocalDateTime;
 import java.time.temporal.ChronoUnit;
 import java.util.Locale;
+import java.util.Random;
 import java.util.Scanner;
 
 public class BasicExercises2 {
@@ -137,6 +138,12 @@ public class BasicExercises2 {
             System.out.println("China: " + China);
             System.out.println("France: " + France);
         }
+
+        //9 Fortune data random choice
+        String[] fortunes = {"said","lina","samira","anir","khadija","simo","brahim","abdo","hassan","fatima","meryam","youssef"};
+        Random rand = new Random();
+        int fr = rand.nextInt(fortunes.length);
+        System.out.println(fortunes[fr]);
 
 
     }
