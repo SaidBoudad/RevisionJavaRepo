@@ -20,13 +20,13 @@ public class BasicExercises3 {
         int key = 10;
         char[] stingToCharArray = text.toCharArray();
         for (char c:stingToCharArray){
-            c += key;  //to decrypt c-=key
+            c += key;  //to decrypt c-= key
             System.out.print(c);
         }
 
         //3
 
-       
+
 
     }
 }
