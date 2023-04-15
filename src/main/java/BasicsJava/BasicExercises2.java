@@ -139,6 +139,7 @@ public class BasicExercises2 {
             System.out.println("France: " + France);
         }
 
+
         //9 Fortune data random choice
         String[] fortunes = {"said","lina","samira","anir","khadija","simo","brahim","abdo","hassan","fatima","meryam","youssef"};
         Random rand = new Random();
