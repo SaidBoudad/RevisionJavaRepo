@@ -139,13 +139,21 @@ public class BasicExercises2 {
             System.out.println("France: " + France);
         }
 
-
         //9 Fortune data random choice
         String[] fortunes = {"said","lina","samira","anir","khadija","simo","brahim","abdo","hassan","fatima","meryam","youssef"};
         Random rand = new Random();
         int fr = rand.nextInt(fortunes.length);
         System.out.println(fortunes[fr]);
 
+        //10 program predict exponential growth giving population growth rate
+        System.out.println("inter the actual population to predict");
+        int pop = scan.nextInt();
+        System.out.println("enter the rate of progression");
+        double rate = scan.nextDouble();
+        System.out.println("enter the time interval");
+        int duration = scan.nextInt();
+
+        System.out.format("%.2f",pop*Math.pow((1+rate),duration));
 
     }
 }
