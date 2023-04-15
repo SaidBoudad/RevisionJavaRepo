@@ -55,8 +55,8 @@ public class TicTacToeGame {
         }
     }
 
-    public static void placeChoice(char[][] gameBoard, int position, String user)  {
-        //Thread.sleep(900);
+    public static void placeChoice(char[][] gameBoard, int position, String user) {
+
         char symbol = ' ';
         if (user.equals("player")) {
             symbol = 'X';

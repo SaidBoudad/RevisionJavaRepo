@@ -1,7 +1,9 @@
 package BasicsJava;
 
+import java.text.NumberFormat;
 import java.time.LocalDateTime;
 import java.time.temporal.ChronoUnit;
+import java.util.Locale;
 import java.util.Scanner;
 
 public class BasicExercises2 {
@@ -118,6 +120,23 @@ public class BasicExercises2 {
         if (palindrome) {
             System.out.println("yes it is a palindrome");
         } else System.out.println("Not a palindrome");
+
+        //8 currency formatter
+        Scanner scanner = new Scanner(System.in);
+        double payment = scanner.nextDouble();
+        scanner.close();
+        if (payment < 0 || payment > Math.pow(10, 9)) {
+            System.out.println("the giving number is out of rang");
+        } else {
+            String us = NumberFormat.getCurrencyInstance(Locale.US).format(payment);
+            String India = NumberFormat.getCurrencyInstance(new Locale("en","in")).format(payment);
+            String China = NumberFormat.getCurrencyInstance(Locale.CHINA).format(payment);
+            String France = NumberFormat.getCurrencyInstance(Locale.FRANCE).format(payment);
+            System.out.println("US: " + us);
+            System.out.println("India: " + India);
+            System.out.println("China: " + China);
+            System.out.println("France: " + France);
+        }
 
 
     }
