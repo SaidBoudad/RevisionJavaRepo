@@ -55,8 +55,7 @@ public class TicTacToeGame {
         }
     }
 
-    public static void placeChoice(char[][] gameBoard, int position, String user) {
-
+    public static void placeChoice(char[][] gameBoard, int position, String user)  {
         char symbol = ' ';
         if (user.equals("player")) {
             symbol = 'X';
