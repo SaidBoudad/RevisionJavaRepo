@@ -42,7 +42,6 @@ public class CalculateTypingSpeed {
         System.out.println("your Words per minute is " + wordsPerMinute);
 
       //not finish in testing
-        
 
     }
 }
