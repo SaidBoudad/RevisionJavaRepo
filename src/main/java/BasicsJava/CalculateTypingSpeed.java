@@ -7,7 +7,7 @@ import java.util.concurrent.TimeUnit;
 
 public class CalculateTypingSpeed {
     public static void main(String[] args) throws InterruptedException {
-
+        // program to calculate typing speed
         String text = "Although some people might advocate for typing out random words or short phrases" +
                 " there are certain sentences that are particularly good for typing practice" +
                 " One such sentence is The quick brown fox jumps over the lazy dog" +
@@ -42,7 +42,7 @@ public class CalculateTypingSpeed {
         System.out.println("your Words per minute is " + wordsPerMinute);
 
         //not finish in testing
-
+        1111
 
     }
 }
