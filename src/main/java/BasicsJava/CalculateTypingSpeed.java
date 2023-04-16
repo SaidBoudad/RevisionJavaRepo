@@ -41,22 +41,7 @@ public class CalculateTypingSpeed {
         System.out.println(tappingTime + "   " + numberOfCharacters);
         System.out.println("your Words per minute is " + wordsPerMinute);
 
-        //not finish in testing
-        1111 joloj
-
-//                [diff]
-//        tool = meld
-//                [difftool "meld"]
-//        path = C:\Program Files\Meld\Meld.exe
-//                [difftool]
-//        prompt = false
-//
-//                [merge]
-//        tool = meld
-//                [mergetool "meld"]
-//        path = C:\Program Files\Meld\Meld.exe
-//                [mergetool]
-//        keepBackup = false
+      //not finish in testing
 
     }
 }
