@@ -1,4 +1,4 @@
-package BasicsJava;
+package programs;
 
 import java.time.LocalTime;
 import java.util.Random;

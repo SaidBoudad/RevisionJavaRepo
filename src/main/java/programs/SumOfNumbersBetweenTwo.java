@@ -1,4 +1,4 @@
-package BasicsJava;
+package programs;
 
 public class SumOfNumbersBetweenTwo {
     public static void main(String[] args) {

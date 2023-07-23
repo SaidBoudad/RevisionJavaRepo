@@ -1,4 +1,4 @@
-package BasicsJava;
+package programs;
 
 import javax.imageio.IIOException;
 import java.io.IOException;
