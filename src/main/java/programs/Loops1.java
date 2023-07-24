@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Loops1 {
     public static void main(String[] args) throws InterruptedException {
-        //read a sequence of integers from user and stop by displying message and the sum if it is greater than 100
+        //1-read a sequence of integers from user and stop by displying message and the sum if it is greater than 100
 
         Scanner scan = new Scanner(System.in);
         int sum = 0;
@@ -34,7 +34,7 @@ public class Loops1 {
         System.out.println("the sum is greater than 100  " + sum);
 
 
-        //disply the sum of strict divisors of an integer given by the user
+        //2-display the sum of strict divisors of an integer given by the user
         System.out.print("enter an integer to find divisors sum : ");
         int intNumber = scan.nextInt();
         int sumDividors = 0;
@@ -47,7 +47,7 @@ public class Loops1 {
         System.out.println("the sum of strict divisors is : "+ sumDividors);
 
 
-        //read an integer from user and indicate if it is a prim or not
+        //3-read an integer from user and indicate if it is a prim or not
 //        while (true) {
 //            System.out.print("give me a positive number :");
 //            int isItPrim = scan.nextInt();
@@ -65,7 +65,7 @@ public class Loops1 {
 //        }
 
 
-        //using the sum of divisors
+        //4-using the sum of divisors
 //       while (true){
 //            System.out.print("give me a positive number :");
 //            int isItPrim = scan.nextInt();
@@ -81,7 +81,7 @@ public class Loops1 {
 //        }
 
 
-        //calculator
+        //5-calculator
 //        while (true){
 //            System.out.println("enter number1 operator number2");
 //            double a = scan.nextDouble();
@@ -107,7 +107,7 @@ public class Loops1 {
 //        }
 //
 
-        //program that read sequance of positive integers and stop if the user fills negative value , and show the max and min of entred numbers
+        //6-Program that read sequance of positive integers and stop if the user fills negative value , and show the max and min of entred numbers
         System.out.println("enter a sequance of positive numbers : ");
         int a = scan.nextInt();
         int max = a;
