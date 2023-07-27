@@ -9,7 +9,7 @@ import java.util.Scanner;
 public class CollectionsExercises {
     static Scanner scan = new Scanner(System.in);
     static BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-    
+
     public static void main(String[] args) throws Exception {
         //1-print each item with it's index uniformly
         int[] arr = {1, 56, 852, 2, 36, 7};
