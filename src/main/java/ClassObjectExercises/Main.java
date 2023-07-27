@@ -7,18 +7,6 @@ public class Main {
     static Scanner scanner=new Scanner(System.in);
     public static void main(String[] args) {
 
-//        Rectangle rect =new Rectangle();
-//        System.out.println(rect.getWidth()+" "+ rect.getHight());
-//        rect.setHight(2);
-//        rect.setWidth(3);
-//        System.out.println(rect);
-//        System.out.println(rect.getArea());
-//        System.out.println(rect.getPerimeter());
-//
-//        printTheArrRectangleAttributes(getTheArrRectangles());
-
-
-
         Client clientSaid = new Client(1,"said","0633736058");
         Client clientSamira = new Client(222,"samira","055736058");
 
@@ -50,20 +38,6 @@ public class Main {
         System.out.println(clientList.get(0).toString());
         System.out.println(clientList.get(1).toString());
 
-
     }
-
-    private static Rectangle[] getTheArrRectangles() {
-        Rectangle[] arrRect = new Rectangle[3];
-        for (int i=0;i<arrRect.length;i++){
-            System.out.println("enter the width and the hight of 3 rectangles");
-            arrRect[i]=new Rectangle(scanner.nextInt(),scanner.nextInt());
-        }return arrRect;
-    }
-    private static void printTheArrRectangleAttributes(Rectangle[] theArrRectangles) {
-        for (Rectangle rec:theArrRectangles)
-            System.out.println(rec.getHight()+" "+rec.getWidth());
-    }
-
 
 }

@@ -10,6 +10,7 @@ public class Account {
     private Date dateCreated;
     private Client client ;
     private ArrayList<Transaction> transactions;
+    private int numberOfTrans;
 
     public Account(int ID, double balance, double annualInterestRate,Client client) {
         this.ID = ID;
@@ -21,10 +22,15 @@ public class Account {
 
     }
 
+    public int numberOfTransaction(){
+        return this.numberOfTrans;
+    }
+
     public Boolean withdraw(double amount){
         if(this.balance-amount>=0){
             this.balance -= amount;
             transactions.add(new Transaction('W',amount,this.balance,"withdrew operation"));
+            this.numberOfTrans++;
             return true;
         }else return false;
     }
@@ -32,10 +38,8 @@ public class Account {
         if(amount>0){
             this.balance += amount;
             transactions.add(new Transaction('D',amount,this.balance,"deposit operation"));
+            this.numberOfTrans++;
         }
-
-
-
     }
 
     public int getID() {
@@ -82,6 +86,7 @@ public class Account {
                 ", annualInterestRate=" + annualInterestRate +
                 ", dateCreated=" + dateCreated +
                 ", transactions=" + transactions +
+                ", numberOfTrans=" + numberOfTrans +
                 '}';
     }
 }
