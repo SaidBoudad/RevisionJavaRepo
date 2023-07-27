@@ -2,7 +2,7 @@ package programs;
 
 import java.util.Arrays;
 
-public class Test {
+public class ArraysExercises {
     public static void main(String[] args) {
         //1-create an array with n elements given by user
         //Integer array
@@ -51,10 +51,7 @@ public class Test {
         printTheMaxOfEachRow(twoDArray);
         printTheMaxOfEachColumn(twoDArray);
 
-
-
     }
-
 
     //2
     private static double average(int[] arr2) {
@@ -62,16 +59,12 @@ public class Test {
         aver = sum(arr2) / arr2.length;
         return aver;
     }
-
-    //2
     private static int product(int[] arr2) {
         int prod = 1;
         for (int i : arr2)
             prod *= i;
         return prod;
     }
-
-    //2
     private static int sum(int[] arr2) {
         int sum = 0;
         for (int i : arr2)
@@ -180,6 +173,7 @@ public class Test {
             System.out.println("the max of the column "+(i+1)+" is : "+max);
 
         }
+
     }
 
 }
